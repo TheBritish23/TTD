@@ -1,4 +1,9 @@
-import { PeanutButter } from './peanut-butter.js'
-import { Jelly } from './jelly.js'
-import { Bread } from './bread.js'
-import '../css/styles.css'
+const path = require('path');
+
+module.exports = {
+  entry: './src/main.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
